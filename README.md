@@ -1,39 +1,133 @@
-<div align="center"> <img src="assets/banners/hero-water-circuit.jpg" alt="Water Crashing on Circuit — Electronics Design Portfolio" width="100%" class="e-rte-image e-imginline"> <h1>⚡ ELECTRONICS DESIGN PORTFOLIO</h1> <p><strong>Where water meets wire — a master-level collection of EDA projects, simulations, and hardware designs</strong></p> <p> <img src="https://img.shields.io/badge/Domain-PCB%20Design-cyan?style=flat-square" class="e-rte-image e-imginline"> <img src="https://img.shields.io/badge/Domain-SPICE%20Simulation-magenta?style=flat-square" class="e-rte-image e-imginline"> <img src="https://img.shields.io/badge/Domain-Digital%20Logic-gold?style=flat-square" class="e-rte-image e-imginline"> <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" class="e-rte-image e-imginline"> </p> </div><hr><h2>
-🌊 The Concept</h2><p><em>Water crashing on a circuit</em> — the moment fluid chaos meets rigid structure, where raw energy discharges across traces designed for control. This portfolio captures that spirit: the collision of creativity with precision engineering, of organic problem-solving with the disciplined art of electronics design.</p><p>Every schematic is a controlled path through chaos. Every simulation is a prediction of how energy will flow. Every PCB layout is an attempt to tame the storm.</p><div align="center"> <img src="assets/images/water-circuit-macro.jpg" alt="Water on Circuit — Macro View" width="70%" class="e-rte-image e-imginline"> </div><hr><h2>🛠️ Tools &amp; Stack</h2><table class="e-rte-table"> <thead> <tr> <th>Domain</th> <th>Primary Tools</th> <th>Output Formats</th> </tr> </thead> <tbody><tr> <td>Schematic &amp; PCB</td> <td>KiCad 8, KiCad 7</td> <td><code>.kicad_sch</code>, <code>.kicad_pcb</code>, <code>.kicad_sym</code></td> </tr> <tr> <td>SPICE Simulation</td> <td>LTspice XVII, Ngspice, Qucs-S</td> <td><code>.asc</code>, <code>.cir</code>, <code>.sp</code></td> </tr> <tr> <td>Analysis Types</td> <td>AC, DC, Transient, S-Parameters, Digital Timing</td> <td><code>.raw</code>, <code>.log</code>, <code>.plt</code></td> </tr> <tr> <td>Fabrication Outputs</td> <td>Gerber RS-274X, Excellon Drill, Interactive BOM</td> <td><code>.gbr</code>, <code>.drl</code>, <code>.pos</code></td> </tr> <tr> <td>Documentation</td> <td>Markdown, LaTeX, KiCad schematics as PDF</td> <td><code>.md</code>, <code>.tex</code>, <code>.pdf</code></td> </tr> </tbody></table><hr><h2>🔧 Featured Projects</h2><table class="e-rte-table"> <thead> <tr> <th>Project</th> <th>Description</th> <th>Tools</th> <th>Status</th> </tr> </thead> <tbody><tr> <td><strong>Power Supply Design</strong></td> <td>Linear &amp; SMPS topologies — 5V/3.3V regulated output with transient analysis and thermal derating</td> <td>KiCad, Ngspice, LTspice</td> <td>🟡 In Progress</td> </tr> <tr> <td><strong>ADC Interface Board</strong></td> <td>16-bit SAR ADC breakout with anti-alias filter, reference voltage architecture, and SPI interface</td> <td>KiCad, Qucs-S</td> <td>🔵 Planned</td> </tr> <tr> <td><strong>Mixed-Signal Filter</strong></td> <td>Active Butterworth low-pass with configurable cutoff — analog front-end for sensor acquisition</td> <td>KiCad, LTspice, Ngspice</td> <td>🔵 Planned</td> </tr> <tr> <td><strong>Digital Logic Verifier</strong></td> <td>Combinational &amp; sequential logic testbench — 74-series TTL validation with timing diagrams</td> <td>Ngspice, Qucs-S</td> <td>⚪ Planned</td> </tr> <tr> <td><strong>RF Impedance Matcher</strong></td> <td>Pi and L-network stub matching for 2.4 GHz antenna feed — Smith chart visualization</td> <td>Qucs-S, Ngspice</td> <td>⚪ Planned</td> </tr> </tbody></table><hr><h2>📂 Repository Structure</h2><pre><code>electronics-design-portfolio/
+<div align="center">
+  <img src="assets/banners/hero-water-circuit.jpg" alt="Water Crashing on Circuit — Electronics Design Portfolio" width="100%">
+  <h1>⚡ ELECTRONICS DESIGN PORTFOLIO</h1>
+  <p><strong>Where water meets wire — a master-level collection of EDA projects, simulations, and hardware designs</strong></p>
+  <p>
+    <img src="https://img.shields.io/badge/Domain-PCB%20Design-cyan?style=flat-square">
+    <img src="https://img.shields.io/badge/Domain-SPICE%20Simulation-magenta?style=flat-square">
+    <img src="https://img.shields.io/badge/Domain-Digital%20Logic-gold?style=flat-square">
+    <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square">
+  </p>
+</div>
+
+---
+
+## 🌊 The Concept
+*Water crashing on a circuit* — the moment fluid chaos meets rigid structure, where raw energy discharges across traces designed for control. This portfolio captures that spirit: the collision of creativity with precision engineering, of organic problem-solving with the disciplined art of electronics design.
+
+Every schematic is a controlled path through chaos. Every simulation is a prediction of how energy will flow. Every PCB layout is an attempt to tame the storm.
+
+<div align="center">
+  <img src="assets/images/water-circuit-macro.jpg" alt="Water on Circuit — Macro View" width="70%">
+</div>
+
+---
+
+## 🛠️ Tools & Stack
+
+
+
+| Domain | Primary Tools | Output Formats |
+| :--- | :--- | :--- |
+| **Schematic & PCB** | KiCad 8, KiCad 7 | `.kicad_sch`, `.kicad_pcb` |
+| **SPICE Simulation** | LTspice XVII, Ngspice, Qucs-S | `.asc`, `.cir`, `.sp` |
+| **Analysis Types** | AC, DC, Transient, S-Parameters | `.raw`, `.log`, `.plt` |
+| **Fabrication** | Gerber RS-274X, Excellon, IBOM | `.gbr`, `.drl`, `.pos` |
+| **Documentation** | Markdown, LaTeX, KiCad PDF | `.md`, `.tex`, `.pdf` |
+
+---
+
+## 🔧 Featured Projects
+
+### 🌊 Power Supply Design (The Storm)
+<img src="assets/banners/analog-chaos.jpg" width="100%" alt="Analog Chaos - Power Supply">
+
+> **Focus: Stability Under Stress.** 
+> A robust 5V/3.3V dual-rail regulator designed to maintain rock-solid stability even when electrical "chaos" hits the traces.
+*   **Engineering Challenge:** Balancing high-efficiency thermal dissipation with ultra-fast transient response.
+*   **Status:** 🟡 In Progress — *Finalizing Thermal Derating Curves.*
+
+---
+
+### 💧 ADC Interface Board (The Precision)
+<img src="assets/banners/digital-sampling.jpg" width="100%" alt="Digital Precision - ADC Interface">
+
+> **Focus: Capturing the Drop.** 
+> A 16-bit SAR ADC breakout that captures fluid analog signals and quantizes them into precise digital data with zero "splash."
+*   **Engineering Challenge:** Designing an Anti-Alias Filter (AAF) to prevent signal ghosting and ensuring SPI data integrity.
+*   **Status:** 🔵 Planned — *Component sourcing in progress.*
+
+---
+
+## 📂 Repository Structure
+
+```text
+electronics-design-portfolio/
 ├── assets/
-│   ├── banners/               # Hero and section graphics
-│   │   └── hero-water-circuit.jpg
-│   └── images/                # Diagrams, screenshots, photos
-│       └── water-circuit-macro.jpg
+│   ├── banners/               # Hero and project visual assets
+│   └── images/                # Technical diagrams and board photos
 ├── projects/
-│   ├── power-supply-design/
-│   │   ├── schematics/        # KiCad schematic files
-│   │   ├── pcb/               # PCB layout and Gerber outputs
-│   │   ├── simulation/        # SPICE decks and results
-│   │   └── docs/              # Project-specific documentation
-│   ├── adc-interface-board/
-│   │   ├── schematics/
-│   │   ├── pcb/
-│   │   ├── simulation/
-│   │   └── docs/
-│   └── mixed-signal-filter/
-│       ├── schematics/
-│       ├── pcb/
-│       ├── simulation/
-│       └── docs/
+│   ├── power-supply-design/   # Schematics, PCB, and SPICE decks
+│   ├── adc-interface-board/   # 16-bit SAR ADC files
+│   └── mixed-signal-filter/   # Active Butterworth filter design
 ├── docs/
-│   ├── simulation-guides/     # SPICE tips, convergence helpers
-│   └── pcb-guidelines/        # DRC rules, stackup references
+│   ├── simulation-guides/     # SPICE tips and convergence helpers
+│   └── pcb-guidelines/        # DRC rules and stackup references
 ├── README.md
 └── LICENSE
-</code></pre><hr><h2>📐 Design Philosophy</h2><p><strong>Schematic First, Always.</strong> Every project begins with a hand-reviewed schematic. No auto-routed shortcuts. Every net is intentional, every component selected with purpose.</p><p><strong>Simulate Before You Fabricate.</strong> SPICE is not optional — it is the rehearsal before the performance. Transient analysis, AC sweeps, and DC operating points are run on every analog sub-circuit before layout begins.</p><p><strong>Chaos is the Test.</strong> A design that only works under ideal conditions is not a finished design. Power supply ripple, EMI coupling, thermal drift, and load transients are the "water crashing on the circuit" — your design must survive the storm.</p><p><strong>Document Everything.</strong> If it isn't documented, it didn't happen. Every design decision, every simulation result, every layout trade-off is recorded. Future-you will thank present-you.</p><hr><h2>🖥️ Simulation Workflow</h2><pre><code>  ┌─────────────┐     ┌──────────────┐     ┌─────────────┐
+```
+
+---
+
+## 📐 Design Philosophy
+
+**Schematic First, Always.** No auto-routed shortcuts. Every net is intentional, every component selected with purpose.
+
+**Simulate Before You Fabricate.** SPICE is the rehearsal before the performance. Transient analysis and AC sweeps are mandatory before layout begins.
+
+**Chaos is the Test.** A design must survive the storm. Power ripple, EMI, and thermal drift are the "water" our circuits must withstand.
+
+---
+
+## 🖥️ Simulation Workflow
+
+```text
+  ┌─────────────┐     ┌──────────────┐     ┌─────────────┐
   │  Schematic   │────▶│  SPICE Deck  │────▶│  Simulate   │
   │  Capture     │     │  Generation  │     │  (Ngspice)  │
   └─────────────┘     └──────────────┘     └──────┬──────┘
                                                    │
                                                    ▼
   ┌─────────────┐     ┌──────────────┐     ┌─────────────┐
-  │  PCB Layout  │◀────│  Validate &amp;  │◀────│  Analyze    │
+  │  PCB Layout  │◀────│  Validate &  │◀────│  Analyze    │
   │  (KiCad)    │     │  Iterate     │     │  Results    │
   └─────────────┘     └──────────────┘     └─────────────┘
-</code></pre><ol> <li><strong>Capture</strong> — Draw the schematic in KiCad with proper symbol libraries and annotations</li> <li><strong>Generate</strong> — Export the SPICE netlist with model references and sub-circuit definitions</li> <li><strong>Simulate</strong> — Run DC, AC, and transient analyses in Ngspice or LTspice</li> <li><strong>Analyze</strong> — Review waveforms, check margins, verify stability and bandwidth</li> <li><strong>Validate</strong> — Confirm results meet specifications; iterate if needed</li> <li><strong>Layout</strong> — Proceed to PCB layout only after simulation validation passes</li> </ol><hr><h2>📋 Progress Tracker</h2><ul> <li><input checked="" disabled="" type="checkbox" data-has-listeners="true"> Repository structure and branding established</li> <li><input checked="" disabled="" type="checkbox" data-has-listeners="true"> Hero banner and visual identity created</li> <li><input disabled="" type="checkbox" data-has-listeners="true"> Power Supply Design — Schematic capture</li> <li><input disabled="" type="checkbox" data-has-listeners="true"> Power Supply Design — SPICE simulation suite</li> <li><input disabled="" type="checkbox" data-has-listeners="true"> Power Supply Design — PCB layout and DRC</li> <li><input disabled="" type="checkbox" data-has-listeners="true"> ADC Interface Board — Schematic and component selection</li> <li><input disabled="" type="checkbox" data-has-listeners="true"> Mixed-Signal Filter — Topology selection and simulation</li> <li><input disabled="" type="checkbox" data-has-listeners="true"> Documentation — Simulation guides and PCB guidelines</li> </ul><hr><h2>🤝 Contributing</h2><p>This is a personal portfolio, but suggestions and corrections are welcome. Open an issue or submit a pull request if you spot something that could be improved.</p><hr><h2>📄 License</h2><p>This project is licensed under the MIT License — see the <a href="LICENSE">LICENSE</a> file for details. Schematics and simulation files are provided for educational and reference purposes.</p><hr><div align="center"> <p><strong>⚡ Like water on a circuit — let the energy flow. ⚡</strong></p> </div>
+```
+
+1.  **Capture** — Schematic entry with proper symbol libraries.
+2.  **Generate** — Export SPICE netlist with model references.
+3.  **Simulate** — Run DC, AC, and transient analyses.
+4.  **Analyze** — Review waveforms and verify stability margins.
+5.  **Layout** — Proceed to PCB only after validation passes.
+
+---
+
+## 📋 Progress Tracker
+
+- [x] Repository structure and branding established
+- [x] Hero banner and visual identity created
+- [ ] Power Supply Design — Schematic capture
+- [ ] Power Supply Design — SPICE simulation suite
+- [ ] ADC Interface Board — Schematic and component selection
+- [ ] Mixed-Signal Filter — Topology selection and simulation
+- [ ] Documentation — Simulation guides and PCB guidelines
+
+---
+
+## 🤝 Contributing
+This is a personal portfolio, but suggestions are welcome. Open an issue or submit a pull request if you spot a way to improve a design.
+
+---
+
+## 📄 License
+This project is licensed under the MIT License.
