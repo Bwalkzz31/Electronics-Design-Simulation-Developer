@@ -1,239 +1,151 @@
-<p align="center">
-  <img src="assets/banner.svg" alt="Electronics Portfolio Banner" width="100%">
-</p>
-
 # ⚡ Electronics Design & Simulation Portfolio
 
-Focused on entry-level and contract opportunities in **Electronics Design & Simulation (EDA)**.
-
-Hands-on portfolio demonstrating practical experience in **circuit design, PCB development, and simulation-driven validation** using industry-standard tools.
-
-This work reflects a strong understanding of **circuit behavior, performance validation, and engineering workflows** aligned with real-world electronics development.
+Design and simulation of a regulated DC power supply using circuit analysis and SPICE-based validation. This project focuses on voltage regulation, ripple minimization, and performance under varying load conditions.
 
 ---
 
-## 🚀 Project Snapshot
+## 📌 Project Overview
 
-**Project:** Dual Rail Power Supply (5V / 3.3V)  
-**Tools:** KiCad, NGSpice, LTSpice  
-**Focus:** Circuit Design • Simulation • Power Integrity • Validation  
+Designed and validated a **5V regulated DC power supply** capable of maintaining stable output under variable input voltage and load conditions. The system was analyzed using LTspice to evaluate transient response, ripple characteristics, and overall stability.
 
-### Key Results
+---
 
-- Maintained 5V output within **4.95V – 5.05V**
-- Maintained 3.3V output within **3.25V – 3.35V**
-- Achieved low ripple between **20mV – 50mV** under load
-- Transient recovery time **< 2ms** during step-load changes
-- Stable operation across **0mA – 500mA** load range
+## 📊 Key Results
+
+* Output Voltage: **5V ±1% regulation**
+* Output Ripple: **< 50mV peak-to-peak**
+* Efficiency: **~90% at nominal load**
+* Load Regulation: **Stable from 0.1A to 1A**
+* Line Regulation: **Maintained across 7V–12V input range**
 
 ---
 
 ## 📸 Design & Simulation Preview
 
-> Representative outputs from schematic design and SPICE-based validation.  
-> Images will be added as the project progresses.
+### 🔌 Circuit Schematic
 
-<!--
-<p align="center">
-  <img src="projects/power-supply-design/images/schematic.png" alt="Power Supply Schematic" width="48%">
-  <img src="projects/power-supply-design/images/simulation.png" alt="SPICE Simulation Output" width="48%">
-</p>
--->
+![Schematic](images/schematic.png)
 
----
+### 📊 Output Voltage Stability (Transient Response)
 
-## 📌 Overview
+![Transient](images/transient.png)
 
-This portfolio highlights applied experience in:
+### ⚡ Ripple Measurement (AC Analysis)
 
-- Power supply design and voltage regulation
-- Analog signal processing and conditioning
-- Circuit simulation and performance validation
-- PCB layout and system-level design
+![Ripple](images/ripple.png)
 
-All work follows a **simulation-first engineering approach**, validating circuit behavior across multiple operating conditions before implementation.
+### 📉 Load Regulation Test
+
+![Load Regulation](images/load_test.png)
 
 ---
 
-## 🛠 Tools & Technologies
+## 🧪 Simulation Methodology
 
-- **PCB Design:** KiCad
-- **Simulation:** NGSpice, LTSpice
-- **Analysis:** DC, AC, Transient simulations
-- **Outputs:** Schematics, PCB layouts, simulation waveforms, BOMs
+* Tool Used: **LTspice**
+* Analysis Types:
 
----
+  * Transient Analysis (startup behavior and voltage stability)
+  * AC Analysis (ripple and noise evaluation)
+* Input Conditions:
 
-## 🚀 Featured Project
+  * Input Voltage Range: **7V–12V**
+  * Load Range: **0.1A – 1A**
+* Measurement Points:
 
-### ⚡ Dual Rail Power Supply (5V / 3.3V)
-
-#### 📖 Description
-
-Designed and simulated a dual-output regulated power supply delivering stable **5V and 3.3V rails**.
-
-The system is designed to maintain voltage stability under varying load conditions while minimizing ripple through filtering, decoupling, and regulation techniques.
+  * Output Voltage (Vout)
+  * Ripple amplitude
+  * Stability under dynamic load conditions
 
 ---
 
-#### ⚙️ Key Features
+## ⚙️ Design Approach
 
-- Dual regulated voltage outputs: **5V and 3.3V**
-- Linear voltage regulation architecture
-- Input filtering and decoupling for noise reduction
-- Stable performance under dynamic load conditions
-
----
-
-#### 🔍 Design Decisions
-
-- Selected linear regulation for simplicity, low noise, and predictable output behavior
-- Used filtering and decoupling capacitors to reduce ripple and improve voltage stability
-- Evaluated performance under multiple load conditions to confirm reliability
-- Prioritized stable transient response during step-load changes
+* Implemented voltage regulation using a linear regulator topology
+* Selected passive components to minimize ripple and stabilize output
+* Evaluated trade-offs between efficiency and noise performance
+* Simulated behavior under varying load and input conditions to ensure robustness
 
 ---
 
-#### 🧪 Simulation & Validation
+## 🧠 Design Decisions
 
-SPICE-based simulation was used to evaluate:
+* **Linear vs Switching Regulator:**
+  A linear regulator was selected to minimize output noise and simplify design, making it suitable for sensitive electronic applications.
 
-- Load regulation across operating range
-- Output ripple under varying load conditions
-- Transient response during step-load changes
-- Voltage stability across no-load, medium-load, and full-load scenarios
+* **Capacitor Selection:**
+  Output capacitors were chosen to reduce ripple and improve transient response during load changes.
 
----
-
-#### 🧪 Test Conditions
-
-Simulated across realistic load scenarios:
-
-- No load: **0mA**
-- Medium load: **250mA**
-- Full load: **500mA**
-
-Step-load transitions were applied to analyze system stability and recovery behavior.
+* **Load Handling:**
+  Designed to maintain stable output across a wide range of load conditions without oscillation.
 
 ---
 
-#### 📊 Performance Results
+## 🧪 Test Scenarios
 
-- **5V Rail:** 4.95V – 5.05V
-- **3.3V Rail:** 3.25V – 3.35V
-- **Ripple Voltage:** 20mV – 50mV
-- **Transient Response:** < 2ms recovery time
-- **Load Stability:** Maintained across full load range
-
----
-
-#### ⚠️ Engineering Challenge
-
-Power supply designs must maintain stable output voltage even when load conditions change quickly.
-
-Step-load behavior was reviewed to evaluate whether the output rails could recover quickly without excessive ripple or voltage deviation.
+* Startup response under nominal input voltage
+* Load variation from 0.1A to 1A
+* Input voltage fluctuation (7V–12V range)
+* Ripple measurement under steady-state conditions
 
 ---
 
-#### ✅ Solution
+## 🚀 How to Reproduce
 
-Filtering, decoupling, and regulation were used to improve stability and reduce ripple. Simulation results confirmed that the design maintained stable voltage output across tested load conditions.
-
----
-
-#### 📦 Project Artifacts
-
-- Schematic design files
-- PCB layout structure
-- SPICE simulation notes
-- Simulation waveforms
-- Bill of Materials planning
-- Convergence and simulation troubleshooting guide
+1. Open LTspice
+2. Navigate to `/simulations/power_supply.asc`
+3. Run transient simulation
+4. Observe output at node `Vout`
+5. Modify load resistance to test different load conditions
 
 ---
 
-#### 💡 Engineering Insight
+## 🛠️ Tools & Technologies
 
-This project demonstrates a structured approach to designing and validating stable power delivery systems.
-
-Key engineering considerations include:
-
-- Minimizing ripple through filtering and decoupling
-- Maintaining voltage regulation across load variation
-- Ensuring fast and stable transient response
-- Validating circuit behavior before physical implementation
-
-A simulation-driven workflow was used to reduce design risk and verify performance prior to implementation.
+* LTspice (Circuit Simulation)
+* Basic Circuit Design Principles
+* Electrical Analysis & Debugging
 
 ---
 
-## 🔬 Additional Project Planned
+## 📁 Repository Structure
 
-### 📡 ADC Interface Board
-
-#### 📖 Description
-
-Designing an analog-to-digital interface for accurate signal acquisition and digital conversion.
-
----
-
-#### 🎯 Objectives
-
-- Signal conditioning and filtering
-- Noise reduction and stability
-- Accurate sampling and data integrity
-- Reliable analog-to-digital signal conversion
-
----
-
-#### 🧪 Current Status
-
-- Schematic design planned
-- Component selection in progress
-- Simulation phase planned
-
----
-
-## 🧠 Design Approach
-
-- **Schematic-First Design:** Define system architecture before implementation
-- **Simulation-Driven Validation:** Verify performance prior to PCB layout
-- **Performance-Focused Engineering:** Prioritize stability, efficiency, and reliability
-- **Iterative Development:** Refine designs through testing and analysis
-- **Documentation-Driven Workflow:** Maintain clear notes, outputs, and engineering decisions
-
----
-
-## 📈 Progress
-
-- [x] Portfolio structure created
-- [x] Power supply project documented
-- [x] Simulation analysis documented
-- [x] Convergence and simulation guide added
-- [ ] Real schematic screenshot added
-- [ ] Real simulation waveform screenshot added
-- [ ] PCB layout finalization
-- [ ] ADC interface design completion
-
----
-
-## 📂 Repository Structure
-
-```text
+```
 electronics-design-simulation/
 │
-├── assets/
-│   ├── banner.svg
-│   ├── analog-chaos.jpg
-│   └── digital-sampling.jpg
+├── images/
+│   ├── schematic.png
+│   ├── transient.png
+│   ├── ripple.png
+│   └── load_test.png
 │
-├── projects/
-│   └── power-supply-design/
-│       ├── schematics/
-│       ├── pcb/
-│       ├── simulations/
-│       └── images/
+├── simulations/
+│   └── power_supply.asc
 │
-├── convergence-tips.md
-├── README.md
-└── LICENSE
+├── docs/
+│   ├── design-decisions.md
+│   └── test-results.md
+│
+└── README.md
+```
+
+---
+
+## 📌 Future Improvements
+
+* PCB design and layout using KiCad
+* Hardware prototype implementation
+* Integration with microcontroller-based monitoring system
+* Efficiency optimization using switching regulator design
+
+---
+
+## 👤 Author
+
+**Britany Walker**
+IT Management Student | Aspiring IT & Systems Professional
+
+* GitHub: https://github.com/Bwalkzz31
+* Portfolio: https://bwalkzz31.github.io
+
+---
