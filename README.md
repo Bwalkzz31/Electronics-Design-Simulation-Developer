@@ -6,7 +6,10 @@ Design and simulation of a regulated DC power supply using circuit analysis and 
 
 ## 📌 Project Overview
 
-Designed and validated a **5V regulated DC power supply** capable of maintaining stable output under variable input voltage and load conditions. The system was analyzed using LTspice to evaluate transient response, ripple characteristics, and overall stability.
+Engineered and validated a **5V regulated DC power supply** designed to maintain stable output under varying input voltage and load conditions. The design was analyzed using LTspice, focusing on voltage regulation, ripple suppression, and transient performance.
+
+The system was tested across multiple operating scenarios to evaluate stability, efficiency, and response to dynamic load changes.
+
 
 ---
 
