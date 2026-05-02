@@ -1,12 +1,18 @@
 # ⚡ Electronics Design & Simulation Portfolio
 
-Engineered and validated a regulated DC power supply using circuit design principles and SPICE-based simulation. This project focuses on voltage regulation, ripple suppression, and performance under varying load and input conditions.
+Designed and simulated a regulated DC power supply using circuit design principles and SPICE-based analysis. This project focuses on voltage regulation, ripple suppression, and performance under varying load and input conditions.
 
 ---
 
 ## 📌 Project Overview
 
-Engineered and validated a **5V regulated DC power supply** designed to maintain stable output under varying input voltage and load conditions. The design was analyzed using LTspice, focusing on voltage regulation, ripple suppression, and transient performance.
+Designed and simulated a **5V regulated DC power supply** capable of maintaining stable output across varying input voltages and dynamic load conditions.
+
+The design was analyzed using **LTspice**, with emphasis on:
+
+* Voltage regulation accuracy
+* Ripple suppression
+* Transient response under load variation
 
 The system was tested across multiple operating scenarios to evaluate stability, efficiency, and response to dynamic load changes.
 
@@ -14,65 +20,60 @@ The system was tested across multiple operating scenarios to evaluate stability,
 
 ## 📊 Performance Results
 
-Simulation results confirm that the system maintains stable output across tested conditions:
+Simulation results confirm stable operation across tested conditions:
 
-* Output Voltage: **5V ±1%**
-* Output Ripple: **< 50mV peak-to-peak**
-* Load Stability: Maintained across **0.1A to 1A**
-* Line Regulation: Stable across **7V–12V input range**
+* **Output Voltage:** 5V ±1%
+* **Output Ripple:** < 50mV peak-to-peak
+* **Load Stability:** Maintained across 0.1A to 1A
+* **Line Regulation:** Stable across 7V–12V input range
 
-Results indicate reliable performance under both steady-state and dynamic conditions.
+---
+
+## 📈 Results Summary
+
+* Stable output under dynamic load conditions
+* Fast transient response during load changes
+* Minimal voltage deviation across input range
+* Reliable performance in both steady-state and transient scenarios
 
 ---
 
 ## 📸 Design & Simulation Preview
 
-### 🔌 Circuit Schematic
-
-![Schematic](images/schematic.png)
-
-### 📊 Output Voltage Stability (Transient Response)
-
-![Transient](images/transient.png)
-
-<!-- Uncomment when available
-### ⚡ Ripple Measurement (AC Analysis)
-![Ripple](images/ripple.png)
-
-### 📉 Load Regulation Test
-![Load Regulation](images/load_test.png)
--->
+![Power Supply Schematic and Transient Response](projects/power-supply-design/images/schematic.png)
 
 ---
 
 ## 🧪 Simulation Methodology
 
-* Tool Used: **LTspice**
-* Analysis Types:
+* **Tool Used:** LTspice
+* **Analysis Types:**
 
   * Transient Analysis (startup behavior and voltage stability)
   * AC Analysis (ripple and noise evaluation)
-* Input Conditions:
 
-  * Input Voltage Range: **7V–12V**
-  * Load Range: **0.1A – 1A**
-* Measurement Points:
+### Input Conditions:
 
-  * Output Voltage (Vout)
-  * Ripple amplitude
-  * Stability under dynamic load conditions
+* Input Voltage Range: 7V–12V
+* Load Range: 0.1A – 1A
+
+### Measurement Points:
+
+* Output Voltage (Vout)
+* Ripple amplitude
+* Stability under dynamic load conditions
 
 ---
 
 ## ⚙️ Design Approach
 
-The system was designed using a linear voltage regulation topology to prioritize low noise and output stability.
+The system was designed using a **linear voltage regulation topology** to prioritize low noise and stable output.
 
 Key considerations included:
 
-* Maintaining consistent voltage output across variable load conditions
-* Minimizing ripple through appropriate capacitor selection
-* Ensuring stable transient response during load switching events
+* Maintaining consistent voltage across variable load conditions
+* Minimizing ripple through capacitor selection
+* Ensuring stable transient response during load switching
 
 Simulations were used to validate performance and identify potential instability under edge conditions.
 
@@ -81,35 +82,35 @@ Simulations were used to validate performance and identify potential instability
 ## 🧠 Design Decisions
 
 * **Regulator Selection:**
-  A linear regulator topology was selected to reduce output noise and simplify circuit design, making it suitable for low-noise applications despite lower efficiency compared to switching alternatives.
+  Linear regulator chosen for low-noise output and simplicity
 
 * **Capacitor Sizing:**
-  Output capacitance was chosen to balance ripple reduction and transient response, preventing voltage dips during sudden load increases.
+  Balanced ripple reduction with transient response performance
 
 * **Input Range Handling:**
-  The circuit was designed to operate reliably across a 7V–12V input range while maintaining output stability.
+  Designed to operate reliably across a 7V–12V range
 
 * **Stability Considerations:**
-  Simulations were used to verify that the system remained stable without oscillation under varying load conditions.
+  Verified no oscillation under varying load conditions
 
 ---
 
 ## 🧪 Test Scenarios
 
 * Startup response under nominal input voltage
-* Load variation from **0.1A to 1A**
-* Input voltage fluctuation (**7V–12V range**)
+* Load variation from 0.1A to 1A
+* Input voltage fluctuation (7V–12V range)
 * Ripple measurement under steady-state conditions
 
 ---
 
 ## ⚠️ Limitations & Considerations
 
-* Efficiency is lower compared to switching regulators due to linear regulation losses
-* Heat dissipation may increase at higher load currents
-* Design prioritizes stability and low noise over maximum efficiency
+* Lower efficiency compared to switching regulators
+* Increased heat dissipation at higher load currents
+* Design prioritizes stability and low noise over efficiency
 
-Future iterations could incorporate a switching regulator to improve efficiency while maintaining acceptable ripple levels.
+Future iterations could incorporate switching regulation to improve efficiency while maintaining acceptable ripple levels.
 
 ---
 
@@ -136,18 +137,13 @@ Future iterations could incorporate a switching regulator to improve efficiency 
 ```
 electronics-design-simulation/
 │
-├── images/
-│   ├── schematic.png
-│   ├── transient.png
-│   ├── ripple.png
-│   └── load_test.png
-│
-├── simulations/
-│   └── power_supply.asc
-│
-├── docs/
-│   ├── design-decisions.md
-│   └── test-results.md
+├── projects/
+│   └── power-supply-design/
+│       ├── images/
+│       │   └── schematic.png
+│       ├── simulation/
+│       │   └── power_supply.asc
+│       └── README.md
 │
 └── README.md
 ```
