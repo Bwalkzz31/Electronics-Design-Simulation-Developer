@@ -1,4 +1,4 @@
-# ⚡ Electronics Design & Simulation Portfolio
+# ⚡ **Schematic (KiCad) + Transient Response (LTspice)**
 
 Designed and simulated a regulated DC power supply using circuit design principles and SPICE-based analysis. This project focuses on voltage regulation, ripple suppression, and performance under varying load and input conditions.
 
